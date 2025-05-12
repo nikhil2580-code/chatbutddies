@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.nikhilkhairnar.chatbuddies.fragments.SignInFragment"
+        android:label="SignInFragment">
+
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_chatListActivity"
+            app:destination="@id/chatListActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.nikhilkhairnar.chatbuddies.fragments.SignUpFragment"
+        android:label="SignUpFragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.nikhilkhairnar.chatbuddies.fragments.ChatFragment"
+        android:label="Chat">
+        <action
+            android:id="@+id/action_chatFragment_to_chatListActivity"
+            app:destination="@id/chatListActivity" />
+    </fragment>
+        <argument
+            android:name="receiverId"
+            app:argType="string" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <argument
+            android:name="profileImageUrl"
+            app:argType="string" />
+
+    <activity
+        android:id="@+id/chatListActivity"
+        android:name="com.nikhilkhairnar.chatbuddies.activities.ChatListActivity"
+        android:label="activity_chat_list"
+        tools:layout="@layout/activity_chat_list" />
+
+</navigation>

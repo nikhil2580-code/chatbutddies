@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "858569881696",
+    "project_id": "chat-buddies--bakend",
+    "storage_bucket": "chat-buddies--bakend.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858569881696:android:90ba6f9de18e420d3d6b05",
+        "android_client_info": {
+          "package_name": "com.nikhilkhairnar.chatbuddies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARcbpTyhAFGYDu-KcdnxogPCyJqBsJPrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
